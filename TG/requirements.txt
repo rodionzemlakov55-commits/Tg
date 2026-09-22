@@ -1,2 +1,5 @@
-telethon>=1.36.0
-PyYAML>=6.0
+telethon
+PyYAML
+PySocks
+python-socks
+python-dotenv
