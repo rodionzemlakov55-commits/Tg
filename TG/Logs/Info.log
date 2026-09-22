@@ -1,0 +1,628 @@
+2026-09-15 16:33:48 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 16:33:48 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 16:33:48 | CRITICAL | run | Критическая ошибка: Пустой api_id / api_hash. Заполните System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 71, in main
+    bot = MyTgBot(config)
+          ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 36, in __init__
+    raise RuntimeError(
+RuntimeError: Пустой api_id / api_hash. Заполните System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+2026-09-15 16:34:22 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 16:34:22 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 16:34:22 | CRITICAL | run | Критическая ошибка: Пустой api_id / api_hash. Заполните System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 71, in main
+    bot = MyTgBot(config)
+          ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 36, in __init__
+    raise RuntimeError(
+RuntimeError: Пустой api_id / api_hash. Заполните System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+2026-09-15 16:37:15 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 16:37:15 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 16:37:15 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-15 16:37:25 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: TimeoutError: 
+2026-09-15 16:51:22 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 16:51:22 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 16:51:22 | INFO     | tg_bot | Используется MTProto-прокси: 85.192.34.18:9443 (secret ...697665)
+2026-09-15 16:51:22 | INFO     | telethon.network.mtprotosender | Connecting to 85.192.34.18:9443/TcpMTProxyRandomizedIntermediate...
+2026-09-15 16:51:22 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:27 | WARNING  | telethon.network.mtprotosender | Attempt 2 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:32 | WARNING  | telethon.network.mtprotosender | Attempt 3 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:37 | WARNING  | telethon.network.mtprotosender | Attempt 4 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:42 | WARNING  | telethon.network.mtprotosender | Attempt 5 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:47 | WARNING  | telethon.network.mtprotosender | Attempt 6 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 16:51:52 | WARNING  | telethon.network.connection.connection | Server closed the connection: 383 bytes read on a total of 259205585 expected bytes
+2026-09-15 16:51:52 | CRITICAL | run | Критическая ошибка: 383 bytes read on a total of 259205585 expected bytes
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 72, in main
+    await bot.run()
+  File "/home/invi/TG/Logic/My_tg.py", line 173, in run
+    await self.client.start(phone=self.phone)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/auth.py", line 135, in _start
+    await self.connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py", line 560, in connect
+    if not await self._sender.connect(self._connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 138, in connect
+    await self._connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 257, in _connect
+    if not await self._try_gen_auth_key(attempt):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 315, in _try_gen_auth_key
+    await authenticator.do_authentication(plain)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/authenticator.py", line 31, in do_authentication
+    res_pq = await sender.send(ReqPqMultiRequest(nonce))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotoplainsender.py", line 36, in send
+    body = await self._connection.recv()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 310, in recv
+    raise err
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 341, in _recv_loop
+    data = await self._recv()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 406, in _recv
+    return await self._codec.read_packet(self._obfuscation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 34, in read_packet
+    packet_with_padding = await super().read_packet(reader)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 17, in read_packet
+    return await reader.readexactly(length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpmtproxy.py", line 77, in readexactly
+    return self._decrypt.encrypt(await self._reader.readexactly(n))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 750, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 383 bytes read on a total of 259205585 expected bytes
+2026-09-15 17:00:37 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:00:37 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:00:37 | INFO     | tg_bot | Используется MTProto-прокси: 85.192.34.18:9443 (secret ...697665)
+2026-09-15 17:00:37 | INFO     | telethon.network.mtprotosender | Connecting to 85.192.34.18:9443/TcpMTProxyAbridged...
+2026-09-15 17:00:38 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:00:43 | WARNING  | telethon.network.mtprotosender | Attempt 2 at connecting failed: ConnectionRefusedError: [Errno 111] Connect call failed ('85.192.34.18', 9443)
+2026-09-15 17:00:48 | WARNING  | telethon.network.mtprotosender | Attempt 3 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:00:53 | WARNING  | telethon.network.mtprotosender | Attempt 4 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:00:58 | WARNING  | telethon.network.mtprotosender | Attempt 5 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:03 | WARNING  | telethon.network.mtprotosender | Attempt 6 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:09 | WARNING  | telethon.network.mtprotosender | Attempt 7 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:14 | WARNING  | telethon.network.mtprotosender | Attempt 8 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:19 | WARNING  | telethon.network.mtprotosender | Attempt 9 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:24 | WARNING  | telethon.network.mtprotosender | Attempt 10 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:29 | WARNING  | telethon.network.mtprotosender | Attempt 11 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:01:34 | CRITICAL | run | Критическая ошибка: Connection to Telegram failed 10 time(s)
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 72, in main
+    await bot.run()
+  File "/home/invi/TG/Logic/My_tg.py", line 171, in run
+    await self.client.start(phone=self.phone)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/auth.py", line 135, in _start
+    await self.connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py", line 560, in connect
+    if not await self._sender.connect(self._connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 138, in connect
+    await self._connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 277, in _connect
+    raise ConnectionError('Connection to Telegram failed {} time(s)'.format(self._retries))
+ConnectionError: Connection to Telegram failed 10 time(s)
+2026-09-15 17:02:46 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:02:46 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:02:46 | INFO     | tg_bot | Используется MTProto-прокси: 85.192.34.18:9443 (secret ...697665)
+2026-09-15 17:02:46 | INFO     | telethon.network.mtprotosender | Connecting to 85.192.34.18:9443/TcpMTProxyAbridged...
+2026-09-15 17:02:47 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:06:02 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:06:02 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:06:02 | INFO     | tg_bot | Используется MTProto-прокси: veloxnetworks.co.uk.:443 (secret ...2a216b)
+2026-09-15 17:06:02 | INFO     | telethon.network.mtprotosender | Connecting to veloxnetworks.co.uk.:443/TcpMTProxyAbridged...
+2026-09-15 17:11:30 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:11:30 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:11:30 | INFO     | tg_bot | Используется MTProto-прокси: veloxnetworks.co.uk.:443 (secret ...2a216b)
+2026-09-15 17:11:30 | INFO     | telethon.network.mtprotosender | Connecting to veloxnetworks.co.uk.:443/TcpMTProxyRandomizedIntermediate...
+2026-09-15 17:11:30 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: ConnectionError: Proxy closed the connection after sending initial payload
+2026-09-15 17:11:35 | ERROR    | telethon.network.connection.connection | Unexpected exception in the receive loop
+Traceback (most recent call last):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 341, in _recv_loop
+    data = await self._recv()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 406, in _recv
+    return await self._codec.read_packet(self._obfuscation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 34, in read_packet
+    packet_with_padding = await super().read_packet(reader)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 17, in read_packet
+    return await reader.readexactly(length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpmtproxy.py", line 77, in readexactly
+    return self._decrypt.encrypt(await self._reader.readexactly(n))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 738, in readexactly
+    raise ValueError('readexactly size can not be less than zero')
+ValueError: readexactly size can not be less than zero
+2026-09-15 17:11:35 | CRITICAL | run | Критическая ошибка: readexactly size can not be less than zero
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 72, in main
+    await bot.run()
+  File "/home/invi/TG/Logic/My_tg.py", line 173, in run
+    await self.client.start(phone=self.phone)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/auth.py", line 135, in _start
+    await self.connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/telegrambaseclient.py", line 560, in connect
+    if not await self._sender.connect(self._connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 138, in connect
+    await self._connect()
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 257, in _connect
+    if not await self._try_gen_auth_key(attempt):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotosender.py", line 315, in _try_gen_auth_key
+    await authenticator.do_authentication(plain)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/authenticator.py", line 31, in do_authentication
+    res_pq = await sender.send(ReqPqMultiRequest(nonce))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/mtprotoplainsender.py", line 36, in send
+    body = await self._connection.recv()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 310, in recv
+    raise err
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 341, in _recv_loop
+    data = await self._recv()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/connection.py", line 406, in _recv
+    return await self._codec.read_packet(self._obfuscation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 34, in read_packet
+    packet_with_padding = await super().read_packet(reader)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpintermediate.py", line 17, in read_packet
+    return await reader.readexactly(length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/network/connection/tcpmtproxy.py", line 77, in readexactly
+    return self._decrypt.encrypt(await self._reader.readexactly(n))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/streams.py", line 738, in readexactly
+    raise ValueError('readexactly size can not be less than zero')
+ValueError: readexactly size can not be less than zero
+2026-09-15 17:15:15 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:15:15 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:15:15 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-15 17:15:15 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-15 17:15:18 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-15 17:15:44 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-15 17:15:44 | INFO     | tg_bot | Запущено циклов рассылки: 1
+2026-09-15 17:15:44 | INFO     | tg_bot | Группа lumichat | следующая отправка через ~84.0 мин
+2026-09-15 17:18:08 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:18:08 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:18:08 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-15 17:18:08 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-15 17:18:08 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-15 17:18:09 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-15 17:18:09 | INFO     | tg_bot | Запущено циклов рассылки: 1
+2026-09-15 17:18:09 | INFO     | tg_bot | Группа lumiaichat | следующая отправка через ~6.6 мин
+2026-09-15 17:24:47 | ERROR    | tg_bot | Группа lumiaichat | ошибка в цикле: object _ChatAction can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 200, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 235, in _send_human_like
+    await self.client.action(entity, "typing")
+TypeError: object _ChatAction can't be used in 'await' expression
+2026-09-15 17:25:47 | INFO     | tg_bot | Группа lumiaichat | следующая отправка через ~24.6 мин
+2026-09-15 17:28:47 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-15 17:28:47 | INFO     | tg_bot | Загружено сообщений: 3 (файл Data/Textgroup/text1)
+2026-09-15 17:28:47 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-15 17:28:47 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-15 17:28:47 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-15 17:28:48 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-15 17:28:48 | INFO     | tg_bot | Запущено циклов рассылки: 1
+2026-09-15 17:28:48 | INFO     | tg_bot | Группа lumiaichat | следующая отправка через ~18.6 мин
+2026-09-15 17:47:25 | INFO     | tg_bot | Группа lumiaichat | печатает ~1.8 сек...
+2026-09-15 17:47:27 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено
+2026-09-15 17:47:27 | INFO     | tg_bot | Группа lumiaichat | следующая отправка через ~14.6 мин
+2026-09-18 09:15:16 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-18 09:15:16 | WARNING  | tg_bot | Файл с сообщениями не найден: Data/Textgroup/en.txt (язык: en)
+2026-09-18 09:15:16 | WARNING  | tg_bot | Файл с сообщениями не найден: Data/Textgroup/ru.txt (язык: ru)
+2026-09-18 09:15:16 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-18 09:15:17 | CRITICAL | run | Критическая ошибка: Для группы lumiaichat (язык: ru) нет сообщений. Заполните Data/Textgroup/ru.txt
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 72, in main
+    await bot.run()
+  File "/home/invi/TG/Logic/My_tg.py", line 220, in run
+    raise RuntimeError(
+RuntimeError: Для группы lumiaichat (язык: ru) нет сообщений. Заполните Data/Textgroup/ru.txt
+2026-09-18 09:21:30 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-18 09:21:30 | CRITICAL | run | Критическая ошибка: name 'TEXTS_DIR' is not defined
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 71, in main
+    bot = MyTgBot(config)
+          ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 58, in __init__
+    self.messages_by_lang[lang] = self._load_messages(lang)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 193, in _load_messages
+    text_file = TEXTS_DIR / f"{language}.txt"
+                ^^^^^^^^^
+NameError: name 'TEXTS_DIR' is not defined
+2026-09-18 09:24:14 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-18 09:24:14 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-18 09:24:14 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-18 09:24:14 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-18 09:24:14 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-18 09:24:14 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-18 09:24:14 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: GeneralProxyError: Socket error: Connection closed unexpectedly
+2026-09-18 09:24:19 | WARNING  | telethon.network.mtprotosender | Attempt 2 at connecting failed: ProxyConnectionError: Error connecting to SOCKS5 proxy 127.0.0.1:9050: [Errno 111] Connection refused
+2026-09-18 09:24:30 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-18 09:24:30 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-18 09:24:30 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-18 09:24:30 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-18 09:24:30 | INFO     | tg_bot | Используется SOCKS5-прокси: 127.0.0.1:9050
+2026-09-18 09:24:30 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-18 09:24:30 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-18 09:24:32 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-18 09:24:32 | INFO     | tg_bot | Запущено циклов рассылки: 2
+2026-09-18 09:24:32 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~20.6 мин
+2026-09-18 09:24:32 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~29.6 мин
+2026-09-18 09:45:10 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.5 сек...
+2026-09-18 09:45:20 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 09:45:20 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~9.6 мин
+2026-09-18 09:54:09 | INFO     | tg_bot | Группа english_chat | печатает ~8.9 сек...
+2026-09-18 09:54:18 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 09:54:58 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.4 сек...
+2026-09-18 09:55:08 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 09:55:08 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~23.6 мин
+2026-09-18 09:55:18 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~9.6 мин
+2026-09-18 10:04:56 | INFO     | tg_bot | Группа english_chat | печатает ~9.2 сек...
+2026-09-18 10:05:06 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 10:06:06 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~17.6 мин
+2026-09-18 10:18:45 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.3 сек...
+2026-09-18 10:18:55 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 10:18:55 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~24.6 мин
+2026-09-18 10:23:43 | INFO     | tg_bot | Группа english_chat | печатает ~9.5 сек...
+2026-09-18 10:23:53 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 10:24:53 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~15.6 мин
+2026-09-18 10:40:31 | INFO     | tg_bot | Группа english_chat | печатает ~9.0 сек...
+2026-09-18 10:40:40 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 10:41:40 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~27.6 мин
+2026-09-18 10:43:33 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.5 сек...
+2026-09-18 10:43:43 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 10:43:43 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~14.6 мин
+2026-09-18 10:58:20 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.0 сек...
+2026-09-18 10:58:30 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 10:58:30 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~5.6 мин
+2026-09-18 11:04:08 | INFO     | tg_bot | Группа lumiaichat | печатает ~8.9 сек...
+2026-09-18 11:04:17 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:04:17 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~5.6 мин
+2026-09-18 11:09:19 | INFO     | tg_bot | Группа english_chat | печатает ~9.0 сек...
+2026-09-18 11:09:28 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 11:09:54 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.4 сек...
+2026-09-18 11:10:04 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:10:04 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~3.6 мин
+2026-09-18 11:10:28 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~13.6 мин
+2026-09-18 11:13:41 | INFO     | tg_bot | Группа lumiaichat | печатает ~8.6 сек...
+2026-09-18 11:13:50 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:13:50 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~6.6 мин
+2026-09-18 11:20:28 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.0 сек...
+2026-09-18 11:20:37 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:20:37 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~4.6 мин
+2026-09-18 11:24:05 | INFO     | tg_bot | Группа english_chat | печатает ~8.8 сек...
+2026-09-18 11:24:14 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 11:25:14 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~17.6 мин
+2026-09-18 11:25:15 | INFO     | tg_bot | Группа lumiaichat | печатает ~8.5 сек...
+2026-09-18 11:25:24 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:25:24 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~2.6 мин
+2026-09-18 11:28:01 | INFO     | tg_bot | Группа lumiaichat | печатает ~8.8 сек...
+2026-09-18 11:28:10 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:28:10 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~23.6 мин
+2026-09-18 11:42:52 | INFO     | tg_bot | Группа english_chat | печатает ~8.9 сек...
+2026-09-18 11:43:01 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 11:44:01 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~14.6 мин
+2026-09-18 11:51:48 | INFO     | tg_bot | Группа lumiaichat | печатает ~9.0 сек...
+2026-09-18 11:51:57 | INFO     | tg_bot | Группа lumiaichat | сообщение отправлено (694 символов)
+2026-09-18 11:51:57 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~29.6 мин
+2026-09-18 11:58:39 | INFO     | tg_bot | Группа english_chat | печатает ~9.2 сек...
+2026-09-18 11:58:48 | ERROR    | tg_bot | Группа english_chat | ошибка в цикле: You can't write in this chat (caused by SetTypingRequest)
+Traceback (most recent call last):
+  File "/home/invi/TG/Logic/My_tg.py", line 286, in _group_loop
+    await self._send_human_like(username, message)
+  File "/home/invi/TG/Logic/My_tg.py", line 329, in _send_human_like
+    async with self.client.action(entity, "typing"):
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 73, in __aexit__
+    await self._task
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/chats.py", line 85, in _update
+    await self._client(self._request)
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/invi/TG/.venv/lib/python3.12/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+             ^^^^^^^^^^^^
+telethon.errors.rpcerrorlist.ChatWriteForbiddenError: You can't write in this chat (caused by SetTypingRequest)
+2026-09-18 11:59:48 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~25.6 мин
+2026-09-20 09:21:26 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-20 09:21:26 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-20 09:21:26 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-20 09:21:26 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-20 09:21:26 | INFO     | tg_bot | SOCKS5-прокси: 127.0.0.1:9050
+2026-09-20 09:21:26 | INFO     | tg_bot | Используется файловая сессия: session.session
+2026-09-20 09:21:26 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-20 09:21:26 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-20 09:27:09 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-20 09:27:09 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-20 09:27:09 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-20 09:27:09 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-20 09:27:09 | CRITICAL | run | Критическая ошибка: Пустой api_id / api_hash. Задайте их через переменные окружения API_ID и API_HASH или в System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 77, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 71, in main
+    bot = MyTgBot(config)
+          ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 93, in __init__
+    raise RuntimeError(
+RuntimeError: Пустой api_id / api_hash. Задайте их через переменные окружения API_ID и API_HASH или в System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+2026-09-20 09:29:04 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-20 09:29:04 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-20 09:29:04 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-20 09:29:04 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-20 09:29:04 | CRITICAL | run | Критическая ошибка: Пустой api_id / api_hash. Задайте их через переменные окружения API_ID и API_HASH или в System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+Traceback (most recent call last):
+  File "/home/invi/TG/run.py", line 79, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/run.py", line 73, in main
+    bot = MyTgBot(config)
+          ^^^^^^^^^^^^^^^
+  File "/home/invi/TG/Logic/My_tg.py", line 93, in __init__
+    raise RuntimeError(
+RuntimeError: Пустой api_id / api_hash. Задайте их через переменные окружения API_ID и API_HASH или в System/Config.yaml (данные берутся на https://my.telegram.org/apps)
+2026-09-20 09:32:47 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-20 09:32:47 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-20 09:32:47 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-20 09:32:47 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-20 09:32:47 | INFO     | tg_bot | SOCKS5-прокси: 127.0.0.1:9050
+2026-09-20 09:32:47 | INFO     | tg_bot | Используется StringSession из переменной окружения
+2026-09-20 09:32:47 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-20 09:32:48 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-20 09:32:49 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-20 09:32:49 | INFO     | tg_bot | Запущено циклов рассылки: 2
+2026-09-20 09:32:49 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~143.0 мин
+2026-09-20 09:32:49 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~207.0 мин
+2026-09-20 09:37:43 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-20 09:37:43 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-20 09:37:43 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-20 09:37:43 | INFO     | tg_bot | Загружено сообщений: 1 (язык: en, файл: /home/invi/TG/Data/Textgroup/en.txt)
+2026-09-20 09:37:43 | INFO     | tg_bot | SOCKS5-прокси: 127.0.0.1:9050
+2026-09-20 09:37:43 | INFO     | tg_bot | Используется StringSession из переменной окружения
+2026-09-20 09:37:43 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-20 09:37:43 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-20 09:37:44 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-20 09:37:44 | INFO     | tg_bot | Запущено циклов рассылки: 2
+2026-09-20 09:37:44 | INFO     | tg_bot | Группа lumiaichat | язык: ru | следующая отправка через ~134.0 мин
+2026-09-20 09:37:44 | INFO     | tg_bot | Группа english_chat | язык: en | следующая отправка через ~208.0 мин
+2026-09-22 21:39:36 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-22 21:39:36 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-22 21:39:36 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-22 21:39:36 | INFO     | tg_bot | SOCKS5-прокси: 127.0.0.1:9050
+2026-09-22 21:39:36 | INFO     | tg_bot | Используется StringSession из переменной окружения
+2026-09-22 21:39:36 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-22 21:39:36 | WARNING  | telethon.network.mtprotosender | Attempt 1 at connecting failed: ProxyConnectionError: Error connecting to SOCKS5 proxy 127.0.0.1:9050: [Errno 111] Connection refused
+2026-09-22 21:39:50 | INFO     | run | Конфиг загружен: /home/invi/TG/System/Config.yaml
+2026-09-22 21:39:50 | INFO     | tg_bot | Папка с текстами: /home/invi/TG/Data/Textgroup
+2026-09-22 21:39:50 | INFO     | tg_bot | Загружено сообщений: 1 (язык: ru, файл: /home/invi/TG/Data/Textgroup/ru.txt)
+2026-09-22 21:39:50 | INFO     | tg_bot | SOCKS5-прокси: 127.0.0.1:9050
+2026-09-22 21:39:50 | INFO     | tg_bot | Используется StringSession из переменной окружения
+2026-09-22 21:39:50 | INFO     | telethon.network.mtprotosender | Connecting to 149.154.167.51:443/TcpFull...
+2026-09-22 21:39:51 | INFO     | telethon.network.mtprotosender | Connection to 149.154.167.51:443/TcpFull complete!
+2026-09-22 21:39:52 | INFO     | tg_bot | Бот авторизован как: invisible_fire_7
+2026-09-22 21:39:52 | INFO     | tg_bot | Запущено циклов рассылки: 3
+2026-09-22 21:39:52 | INFO     | tg_bot | Группа uslugi_irkutsk | язык: ru | следующая отправка через ~95.0 мин
+2026-09-22 21:39:52 | INFO     | tg_bot | Группа chatik_freelance | язык: ru | следующая отправка через ~133.0 мин
+2026-09-22 21:39:52 | INFO     | tg_bot | Группа kartoni17 | язык: ru | следующая отправка через ~386.0 мин

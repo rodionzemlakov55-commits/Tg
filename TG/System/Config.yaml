@@ -1,0 +1,16 @@
+texts_dir: "Data/Textgroup"
+language: ru
+
+proxy:
+  type: none
+
+groups:
+  uslugi_irkutsk:
+    time: 1.5
+    language: ru
+  chatik_freelance:
+    time: 2
+    language: ru
+  kartoni17:
+    time: 6
+    language: ru
