@@ -1,4 +1,4 @@
-texts_dir: "Data/Textgroup"
+texts_dir: "/app/TG/Data/Textgroup"
 language: ru
 
 proxy:
