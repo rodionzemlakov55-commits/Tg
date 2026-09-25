@@ -1,5 +1,5 @@
 telethon
-PyYAML
+PyYAML==6.0.2
 PySocks
 python-socks
 python-dotenv
