@@ -6,11 +6,17 @@ proxy:
 
 groups:
   uslugi_irkutsk:
-    time: 1.5
+    time: 1.1
     language: ru
-  chatik_freelance:
+  Freelancechat2:
+    time: 1.2
+    language: ru
+  dubay_chat:
     time: 2
     language: ru
-  kartoni17:
-    time: 6
+  jess_chat:
+    time: 1.3
+    language: ru
+  freelance_chatik0:
+    time: 2
     language: ru
